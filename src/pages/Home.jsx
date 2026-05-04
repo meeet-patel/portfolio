@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { TbDownload } from "react-icons/tb";
+import HeroScrollCue from "../components/HeroScrollCue";
 import PortraitImage from "../components/PortraitImage";
 import { site } from "../data/siteData";
 
@@ -9,8 +10,8 @@ export default function Home() {
       id="home"
       className="section-inset relative flex min-h-[100dvh] flex-col pb-10 pt-[4.35rem] sm:pt-[4.6rem] lg:min-h-[100svh] lg:pb-12 lg:pt-[4.85rem]"
     >
-      <div className="page-container flex flex-1 flex-col justify-center gap-3 lg:gap-4 xl:gap-5">
-        <div className="pt-6 text-center sm:pt-8 lg:pt-10">
+      <div className="page-container flex flex-1 flex-col justify-start gap-5 pt-4 pb-12 sm:gap-6 sm:pt-6 sm:pb-14 lg:gap-8 lg:pt-8 lg:pb-16 xl:gap-9">
+        <div className="text-center">
           <motion.div
             className="mx-auto min-w-0 w-full max-w-none"
             initial={{ opacity: 0, y: 22 }}
@@ -31,9 +32,9 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <div className="grid items-stretch gap-5 lg:grid-cols-12 lg:gap-x-8 lg:gap-y-4 xl:gap-x-10">
+        <div className="grid grid-cols-1 items-center gap-8 sm:gap-9 lg:grid-cols-12 lg:gap-x-7 lg:gap-y-0 xl:gap-x-9">
           <motion.div
-            className="mx-auto flex w-full max-w-md justify-center lg:col-span-5 lg:mx-0 lg:max-w-none"
+            className="mx-auto w-full max-w-[min(100%,17.5rem)] sm:max-w-[min(100%,18.5rem)] lg:col-span-5 lg:ml-auto lg:mr-0 lg:max-w-[min(100%,20rem)] xl:max-w-[min(100%,21rem)]"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.1 }}
@@ -45,7 +46,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.14 }}
-            className="flex flex-col justify-center lg:col-span-7"
+            className="flex flex-col justify-center text-center lg:col-span-7 lg:pl-0 lg:text-left"
           >
             <p className="text-[calc(0.9375rem+6px)] leading-relaxed text-muted sm:text-[calc(1rem+6px)] lg:text-[calc(1.02rem+6px)] lg:leading-[1.65]">
               {site.heroBio}
@@ -74,6 +75,7 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
+      <HeroScrollCue />
     </section>
   );
 }

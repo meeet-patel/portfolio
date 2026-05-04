@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { site } from "../data/siteData";
 
 export const portraitImageClassName =
-  "h-auto w-full max-h-[min(51svh,397px)] object-contain object-center contrast-[1.02] sm:max-h-[min(60svh,506px)] lg:max-h-[min(67svh,635px)] xl:max-h-[min(69svh,688px)]";
+  "h-auto w-full max-h-[min(40svh,300px)] object-contain object-[50%_18%] contrast-[1.02] sm:max-h-[min(44svh,360px)] sm:object-[50%_20%] lg:max-h-[min(48svh,420px)] lg:object-[50%_22%] xl:max-h-[min(50svh,460px)]";
 
 const aboutCropFrame =
   "relative w-full min-w-0 overflow-hidden rounded-xl " +

@@ -1,5 +1,5 @@
 import brandLogo from "../assets/svg/brand/logo-mark.svg";
-import portraitSvg from "../assets/svg/about/bwTheme-boy.svg";
+import portraitImg from "../assets/images/about/bwTheme-boy.png";
 import thinkwikLogo from "../assets/svg/experience/thinkwik-logo.svg";
 import arsenaltechLogo from "../assets/svg/experience/arsenaltech-logo.svg";
 import crestDataLogo from "../assets/svg/experience/crest-data-logo.svg";
@@ -32,7 +32,7 @@ export const site = {
 
   availabilityBadge: "Open to Opportunities",
 
-  portraitSrc: portraitSvg,
+  portraitSrc: portraitImg,
   portraitAlt: "Meet Patel",
 
   resumeUrl: resumePdf,
