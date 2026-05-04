@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function () {
+        try {
+          var k = "portfolio-theme";
+          var s = localStorage.getItem(k);
+          var dark = s !== "light";
+          document.documentElement.classList.toggle("dark", dark);
+        } catch (e) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <title>Meet Patel | Portfolio</title>
+    <meta
+      name="description"
+      content="Meet Patel — Senior Software Engineer. Backend APIs, cloud systems, and data platforms."
+    />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg?v=6" sizes="any" />
+    <link rel="shortcut icon" href="%BASE_URL%favicon.svg?v=6" type="image/svg+xml" />
+    <meta id="theme-color-meta" name="theme-color" content="#0D0D0D" />
+    <script>
+      try {
+        var m = document.getElementById("theme-color-meta");
+        if (m)
+          m.setAttribute(
+            "content",
+            document.documentElement.classList.contains("dark")
+              ? "#0D0D0D"
+              : "#FAFAFA",
+          );
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

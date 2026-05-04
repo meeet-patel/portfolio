@@ -1,0 +1,15 @@
+{
+  "short_name": "Meet Patel",
+  "name": "Meet Patel — Portfolio",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0D0D0D",
+  "background_color": "#fafafa"
+}

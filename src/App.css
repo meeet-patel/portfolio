@@ -1,0 +1,12 @@
+:root {
+    /* Match https://roshani-bhuva.github.io/portfolio/ — Inter UI + Pacifico accents */
+    --primaryFont: 'Inter', system-ui, sans-serif;
+    --displayFont: 'Pacifico', cursive;
+}
+
+body {
+    font-family: var(--primaryFont);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
