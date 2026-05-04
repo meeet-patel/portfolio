@@ -55,16 +55,6 @@
     @apply mx-auto w-full max-w-6xl px-3 md:px-5 lg:max-w-7xl 2xl:max-w-[min(100%,85rem)];
   }
 
-  /**
-   * Script wordmark — explicit + !important so it wins over Tailwind preflight
-   * `button { font-family: inherit }`, which otherwise keeps “Meet Patel” in Inter.
-   */
-  .font-wordmark {
-    font-family: "Great Vibes", "Brush Script MT", "Segoe Script", cursive !important;
-    font-weight: 400;
-    font-style: normal;
-    font-synthesis: none;
-  }
 }
 
 html.site-guard-no-callout {

@@ -1,21 +1,24 @@
+import brandLogo from "../assets/svg/brand/logo-mark.svg";
 import portraitSvg from "../assets/svg/about/bwTheme-boy.svg";
 import thinkwikLogo from "../assets/svg/experience/thinkwik-logo.svg";
 import arsenaltechLogo from "../assets/svg/experience/arsenaltech-logo.svg";
 import crestDataLogo from "../assets/svg/experience/crest-data-logo.svg";
 import resumePdf from "../assets/pdf/Meet Patel Resume.pdf?url";
-import projectOne from "../assets/svg/projects/one.svg";
-import projectTwo from "../assets/svg/projects/two.svg";
-import projectThree from "../assets/svg/projects/three.svg";
-import projectFour from "../assets/svg/projects/four.svg";
-import projectFive from "../assets/svg/projects/five.svg";
-import projectSix from "../assets/svg/projects/six.svg";
-import projectSeven from "../assets/svg/projects/seven.svg";
-import projectEight from "../assets/svg/projects/eight.svg";
-import projectNine from "../assets/svg/projects/nine.svg";
-import projectTen from "../assets/svg/projects/ten.svg";
+import imgAlleforge from "../assets/images/projects/alleforge.png";
+import imgBeringHealth from "../assets/images/projects/bering-health.png";
+import imgEliteNannies from "../assets/images/projects/elite-nannies.png";
+import imgExchangeRobotics from "../assets/images/projects/exchange-robotics.png";
+import imgGoodDeedIt from "../assets/images/projects/good-deed-it.png";
+import imgHollaAppMe from "../assets/images/projects/holla-app-me.png";
+import imgLoanbot from "../assets/images/projects/loanbot.png";
+import imgMobileAdvantage from "../assets/images/projects/mobile-advantage.png";
+import imgSmartFacilityLabs from "../assets/images/projects/smart-facility-labs.png";
+import imgThisworks from "../assets/images/projects/thisworks.png";
 
 export const site = {
   name: "Meet Patel",
+  /** Navbar / footer wordmark (SVG URL from Vite). */
+  brandLogo,
   title: "Senior Software Engineer",
   tagline:
     "Backend engineer building scalable APIs, cloud systems, and data-driven platforms.",
@@ -108,17 +111,17 @@ export const projects = [
     title: "AlleForge",
     description:
       "Lean API client in the browser and on desktop. REST with live responses, collections and workspaces, auth and env vars. Docs, OpenAPI export, and pre/post scripts.",
-    image: projectSix,
+    image: imgAlleforge,
     tag: "Developer tools",
     link: "https://alleforge.com",
   },
   {
     id: "bering-health",
-    title: "Bering Health — Virtual Care",
+    title: "Bering Health — Virtual Care (By Cleveland Clinic)",
     description:
       "NestJS virtual care: patient and doctor flows, Redox, OpenEMR, MongoDB. Lex on Lambda and Auth0 for HIPAA-minded access.",
     tag: "Healthcare APIs",
-    image: projectTwo,
+    image: imgBeringHealth,
     link: "",
   },
   {
@@ -127,7 +130,7 @@ export const projects = [
     description:
       "LA and NYC placement for career nannies with extra skills—education, nursing, languages, wellness, and more. Top 5% screening and matching on values and lifestyle. Support from shortlist through hire and beyond.",
     tag: "Web Application",
-    image: projectNine,
+    image: imgEliteNannies,
     link: "https://www.elitenannies.com/",
   },
   {
@@ -136,7 +139,7 @@ export const projects = [
     description:
       "Agentic AI for credit and capital markets. Node.js APIs with OAuth, Bearer, and token flows. Drive, S3, Cosmos DB, quotas, App Service, VMs, Static Web Apps.",
     tag: "Agentic AI",
-    image: projectFour,
+    image: imgExchangeRobotics,
     link: "https://scalata.ai/",
   },
   {
@@ -145,7 +148,7 @@ export const projects = [
     description:
       "Volunteering and CSR matched in real time by skills, interests, and location. Charities post needs; neighbours and workplace volunteers respond nearby. Corporate dashboard for impact and ESG reporting.",
     tag: "Social impact",
-    image: projectEight,
+    image: imgGoodDeedIt,
     link: "https://www.gooddeedit.com/",
   },
   {
@@ -154,7 +157,7 @@ export const projects = [
     description:
       "Social platform on Node.js and MongoDB. Socket.io chat, signed URLs for media, GetStream voice and video, maps.",
     tag: "Mobile Application",
-    image: projectFive,
+    image: imgHollaAppMe,
     link: "",
   },
   {
@@ -162,25 +165,25 @@ export const projects = [
     title: "Mobile Advantage",
     description:
       "Employee device benefits and recycling. Node.js e-commerce, trade-ins, PayPal Credit, Klarna, carrier SIM and insurance, CO₂ reporting, RBAC, MongoDB.",
-    image: projectOne,
+    image: imgMobileAdvantage,
     tag: "Web Application",
     link: "https://mobileadvantage.co.uk/",
   },
   {
-    id: "review-my-mortgage",
-    title: "ReviewMyMortgage",
+    id: "Loanbot",
+    title: "Loanbot",
     description:
       "Mortgage education from a national program database tailored to your profile and property. Compare options and model down payment and terms. Vetted PROLenders and partners for pre-qual, purchase, or refinance.",
     tag: "Fintech",
-    image: projectTen,
-    link: "https://reviewmymortgage.com/",
+    image: imgLoanbot,
+    link: "https://apps.apple.com/in/app/loanbot/id6747381290",
   },
   {
     id: "smart-facility-labs",
     title: "Smart Facility Labs",
     description:
       "AI facility ops: meters, sensors, assets, and technicians in one stack. Seven agents and a natural-language Pilot for anomalies, work orders, field work, and compliance. Live energy and water views.",
-    image: projectSeven,
+    image: imgSmartFacilityLabs,
     tag: "AI & PropTech",
     link: "https://www.smartfacilitylabs.com/",
   },
@@ -190,7 +193,7 @@ export const projects = [
     description:
       "Employer-of-record on Node.js: admin, client, and employee APIs with RBAC. MongoDB for records and payslips, document verification.",
     tag: "Web Application",
-    image: projectThree,
+    image: imgThisworks,
     link: "https://www.thisworks.jobs/",
   },
 ];

@@ -65,7 +65,7 @@ export default function Navbar() {
       className="section-inset fixed top-2 left-0 right-0 z-50 flex flex-col items-center pointer-events-none sm:top-3"
     >
       <motion.nav
-        className={`pointer-events-auto page-container flex min-h-[2.75rem] items-center justify-between gap-2 rounded-full border border-foreground/10 bg-nav-surface/90 px-3 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.08)] backdrop-blur-xl transition-shadow duration-300 dark:shadow-[0_8px_32px_rgba(0,0,0,0.45)] sm:min-h-[3rem] sm:gap-3 sm:px-4 sm:py-2.5 md:gap-4 ${
+        className={`pointer-events-auto page-container flex min-h-[2.5rem] items-center justify-between gap-2 rounded-full border border-foreground/10 bg-nav-surface/90 px-3 py-1.5 shadow-[0_8px_32px_rgba(0,0,0,0.08)] backdrop-blur-xl transition-shadow duration-300 dark:shadow-[0_8px_32px_rgba(0,0,0,0.45)] sm:min-h-[2.75rem] sm:gap-3 sm:px-4 sm:py-2 md:gap-4 ${
           elevated
             ? "shadow-[0_12px_24px_rgba(0,0,0,0.1)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.55)]"
             : ""
@@ -74,12 +74,17 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => scrollToSection("home")}
-          className="font-wordmark group flex shrink-0 items-center rounded-full px-0.5 py-0.5 outline-none ring-accent/0 transition hover:ring-2 focus-visible:ring-2 focus-visible:ring-accent/50"
+          className="group flex shrink-0 items-center rounded-full p-0 outline-none ring-accent/0 transition hover:ring-2 focus-visible:ring-2 focus-visible:ring-accent/50"
           aria-label="Home"
         >
-          <span className="relative pb-0.5 text-[clamp(1.05rem,2.8vw,1.35rem)] leading-[0.95] tracking-[0.02em] text-foreground antialiased drop-shadow-[0_1px_10px_rgba(0,0,0,0.2)] transition duration-300 group-hover:text-accent group-hover:drop-shadow-[0_0_14px_rgb(var(--accent)_/_0.3)] dark:drop-shadow-[0_1px_12px_rgba(0,0,0,0.45)] sm:text-[clamp(1.1rem,2.5vw,1.45rem)]">
-            {site.name}
-          </span>
+          <img
+            src={site.brandLogo}
+            alt=""
+            width={500}
+            height={500}
+            className="h-[clamp(1.95rem,5vw,2.45rem)] w-auto object-contain object-left drop-shadow-[0_1px_10px_rgba(0,0,0,0.12)] transition duration-300 group-hover:opacity-90 dark:h-[clamp(2.05rem,5.2vw,2.55rem)] dark:brightness-0 dark:invert dark:drop-shadow-[0_1px_12px_rgba(0,0,0,0.35)] sm:h-[clamp(2rem,4.8vw,2.5rem)] dark:sm:h-[clamp(2.1rem,5vw,2.65rem)]"
+            decoding="async"
+          />
         </button>
 
         <ul className="hidden items-center gap-0.5 md:flex lg:gap-1">

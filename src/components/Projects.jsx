@@ -43,15 +43,15 @@ export default function Projects() {
 
             const inner = (
               <div className="flex h-full min-h-0 flex-1 flex-col gap-3.5 p-4 sm:gap-4 sm:p-5 md:p-6">
-                <div className="group/media relative aspect-[2/1] w-full min-h-[180px] shrink-0 overflow-hidden rounded-xl border border-foreground/10 bg-elevated sm:min-h-[222px] sm:rounded-2xl sm:aspect-[21/8] lg:aspect-[11/4] lg:min-h-[238px]">
+                <div className="group/media relative flex h-[min(52vw,280px)] w-full shrink-0 overflow-hidden rounded-xl bg-elevated sm:h-[min(48vw,320px)] sm:rounded-2xl md:h-[min(42vw,340px)] lg:h-[min(38vw,380px)]">
                   <span className="absolute left-3 top-3 z-10 rounded-full border border-accent/25 bg-card/90 px-3 py-1.5 text-[12px] font-semibold uppercase tracking-[0.14em] text-accent shadow-sm backdrop-blur-sm sm:left-4 sm:top-4 sm:px-3.5 sm:py-2 sm:text-[13px]">
                     {project.tag}
                   </span>
-                  <div className="absolute inset-0 flex items-center justify-center p-6 transition-[filter] duration-300 group-hover/media:brightness-[1.05]">
+                  <div className="flex h-full w-full items-center justify-center p-3 sm:p-4 md:p-5">
                     <img
                       src={project.image}
-                      alt=""
-                      className="max-h-full max-w-full object-contain"
+                      alt={`${project.title} product mockup`}
+                      className="max-h-full max-w-full object-contain object-center overflow-hidden rounded-xl transition-[filter] duration-300 group-hover/media:brightness-[1.05] sm:rounded-2xl"
                       loading="lazy"
                       decoding="async"
                     />

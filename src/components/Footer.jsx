@@ -46,12 +46,17 @@ export default function Footer() {
             <button
               type="button"
               onClick={() => scrollToSection("home")}
-              className="font-wordmark group w-fit rounded-full px-1 text-left outline-none ring-accent/0 transition hover:ring-2 focus-visible:ring-2 focus-visible:ring-accent/50"
+              className="group w-fit rounded-full p-0 text-left outline-none ring-accent/0 transition hover:ring-2 focus-visible:ring-2 focus-visible:ring-accent/50"
               aria-label="Home"
             >
-              <span className="text-[clamp(1.05rem,2.8vw,1.4rem)] leading-[0.95] tracking-[0.02em] text-foreground antialiased transition duration-300 group-hover:text-accent">
-                {site.name}
-              </span>
+              <img
+                src={site.brandLogo}
+                alt=""
+                width={500}
+                height={500}
+                className="h-[clamp(2rem,3.4vw,2.45rem)] w-auto object-contain object-left transition duration-300 group-hover:opacity-90 dark:brightness-0 dark:invert sm:h-[clamp(2.1rem,3.2vw,2.6rem)]"
+                decoding="async"
+              />
             </button>
             <p className="text-sm leading-relaxed text-muted">
               {site.tagline}
